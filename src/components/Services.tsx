@@ -4,56 +4,51 @@ import { motion } from "framer-motion";
 export const Services = () => {
   const services = [
     {
-      title: "HVAC & Air Conditioning",
-      description: "Commercial and residential rooftop and split system air conditioning installation, repair, and maintenance.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/57caaa70-e41c-4d13-a151-8330eda00cbd.png",
-      href: "/services/hvac-air-conditioning"
+      title: "Dematting & Undercoat Treatment",
+      description: "Gentle removal of mats and dead undercoat to keep your pet's skin healthy and coat shining.",
+      image: "https://vibe.filesafe.space/1777144393499000111/attachments/58ba642a-4ee9-4082-ad9b-a9b21c821316.png",
+      href: "/services/dematting-undercoat"
     },
     {
-      title: "Commercial Refrigeration",
-      description: "Expert service for all types of commercial refrigeration systems in supermarkets and restaurants.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/961f0fae-7331-4e1c-824e-9808381932c0.png",
-      href: "/services/commercial-refrigeration"
+      title: "Hand Scissoring & Show Cuts",
+      description: "Precision styling and breed-specific cuts by our experienced master groomers.",
+      image: "https://vibe.filesafe.space/1777144393499000111/attachments/a5d8c2c5-8753-4015-9740-75d9995c8c52.png",
+      href: "/services/hand-scissoring"
     },
     {
-      title: "Residential Refrigeration",
-      description: "Professional repair and maintenance for residential refrigerators and freezers.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/c332c992-ec32-461f-ac83-88ee576cfc17.png",
-      href: "/services/residential-refrigeration"
+      title: "Full Grooming Package",
+      description: "Complete spa treatment including bath, brush, cut, and finishing touches.",
+      image: "https://vibe.filesafe.space/1777144393499000111/attachments/008dbbef-cd63-47ec-b9cb-de9eefe38af2.png",
+      href: "/services/full-grooming"
     },
     {
-      title: "Walk-in Coolers & Freezers",
-      description: "Installation and repair of commercial and residential walk-in coolers and freezers to keep your inventory safe.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/dc92bb99-1383-4df7-981d-f24b6c8a9221.png",
-      href: "/services/walk-in-coolers"
+      title: "Bird Grooming",
+      description: "Professional beak, nail, and wing trimming for all types of avian friends.",
+      image: "https://vibe.filesafe.space/1777144393499000111/attachments/ac0de7e9-73c7-4347-a111-dd60d27cfeef.png",
+      href: "/services/bird-grooming"
     },
     {
-      title: "Restaurant Equipment Repair & Maintenance",
-      description: "Fast and reliable repair services for commercial ovens, fryers, and cooking equipment.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/ea931fb0-2115-4e56-915f-633d726fa9c2.png",
-      href: "/services/restaurant-equipment"
+      title: "Nail Trim & Ear Cleaning",
+      description: "Essential maintenance for your pet's comfort, hygiene, and overall well-being.",
+      image: "https://vibe.filesafe.space/1777144393499000111/attachments/e2305356-3ce9-4c00-866c-0206676ea4de.png",
+      href: "/services/nail-trim-ear-cleaning"
     },
     {
-      title: "Ice Machine & EMS Systems",
-      description: "Professional installation and maintenance of commercial and residential ice machines and EMS systems.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/a0457b28-7b66-4954-b91b-435f5fd9388d.png",
-      href: "/services/ice-machine-ems"
+      title: "Multi-Pet Grooming",
+      description: "We welcome dogs, cats, rabbits, and horses! Comprehensive care for all your companions.",
+      image: "https://vibe.filesafe.space/1777144393499000111/assets/7db4e9d7-dfce-44ec-9b93-1c9b9587f7fe.png",
+      href: "/services/multi-pet-grooming"
     }
   ];
 
   return (
-    <section id="services" className="py-12 bg-background border-b border-border/40">
+    <section id="services" className="py-12 bg-card border-b border-border/40">
       <div className="w-full max-w-[1200px] mx-auto px-[12px]">
-        <div className="flex flex-col md:flex-row md:items-end gap-4 mb-12">
-          <div className="flex-shrink-0">
-            <p className="text-sm font-bold tracking-widest text-white/70 uppercase mb-2">
-              WHAT WE ARE BEST AT
-            </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter">
-              OUR SERVICES
-            </h2>
-          </div>
-          <div className="flex-grow h-[2px] bg-primary mb-2 md:mb-4 hidden md:block"></div>
+        <div className="text-center mb-12 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
+            Our Services
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
         </div>
 
         <motion.div 
@@ -83,7 +78,7 @@ export const Services = () => {
               <img 
                 src={service.image} 
                 alt={service.title} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-30"
+                className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-30"
               />
               
               {/* Overlay Description */}

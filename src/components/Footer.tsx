@@ -10,31 +10,31 @@ export const Footer = () => {
   return (
     <footer className="bg-black border-t-2 border-primary text-gray-300">
       <div className="w-full max-w-[1200px] mx-auto px-[12px] py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.25fr_1fr_1fr_1fr_1fr] gap-12 lg:gap-8">
           
       {/* Brand & Contact */}
       <div className="space-y-6">
         <h4 className="text-white font-black uppercase tracking-wider">Contact Us</h4>
         <div className="flex items-center gap-2 text-white font-black text-lg tracking-tighter uppercase">
-          Tri Refrigeration & HVAC
+          Acme Grooming Co Mobile
         </div>
         <div className="space-y-3">
           <div className="flex items-center gap-3">
             <Phone className="w-4 h-4 text-primary shrink-0" />
-            <a href="tel:+17139097745" className="font-bold hover:text-primary transition-colors">(713) 909-7745</a>
+            <a href="tel:+13863883540" className="font-bold hover:text-primary transition-colors">(386) 388-3540</a>
           </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
-                <span className="font-bold">4610 Cashel Glen Dr, Houston, TX 77069</span>
+                <span className="font-bold">101 Ganey Ln, Satsuma, FL 32189</span>
               </div>
               <div className="flex gap-4 pt-2">
-                <a href="https://www.facebook.com/Tripointrefrigeration/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+                <a href="#" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="https://www.instagram.com/TriHVACHouston" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+                <a href="#" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="https://g.page/r/CZoh3-NW4MDcEAE/review" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+                <a href="#" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                   <GoogleIcon className="w-5 h-5" />
                 </a>
               </div>
@@ -45,54 +45,53 @@ export const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Business</h4>
             <ul className="space-y-3">
-              <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Home</a></li>
               <li><a href="/gallery" className="hover:text-primary transition-colors">Gallery</a></li>
               <li><a href="/blog" className="hover:text-primary transition-colors">Blog</a></li>
               <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
-              <li><a href="https://g.page/r/CZoh3-NW4MDcEAE/review" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Review Us</a></li>
-            </ul>
-          </div>
-          {/* Shop Links */}
-          <div className="space-y-6">
-            <h4 className="text-white font-black uppercase tracking-wider">Services</h4>
-            <ul className="space-y-3">
-              <li><a href="/services/hvac-air-conditioning" className="hover:text-primary transition-colors">HVAC & Air Conditioning</a></li>
-              <li><a href="/services/commercial-refrigeration" className="hover:text-primary transition-colors">Commercial Refrigeration</a></li>
-              <li><a href="/services/walk-in-coolers" className="hover:text-primary transition-colors">Walk-in Coolers & Freezers</a></li>
-              <li><a href="/services/restaurant-equipment" className="hover:text-primary transition-colors">Restaurant Equipment</a></li>
-              <li><a href="/services/ice-machine-ems" className="hover:text-primary transition-colors">Ice Machine & EMS</a></li>
-              <li><a href="/services/residential-refrigeration" className="hover:text-primary transition-colors">Residential Refrigeration</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Review Us</a></li>
             </ul>
           </div>
 
-          {/* Locations Links */}
+          {/* Services Links */}
           <div className="space-y-6">
-            <h4 className="text-white font-black uppercase tracking-wider">Locations</h4>
+            <h4 className="text-white font-black uppercase tracking-wider">Our Services</h4>
             <ul className="space-y-3">
-              <li><a href="/locations/houston-tx" className="hover:text-primary transition-colors">Houston, TX</a></li>
-              <li><a href="/locations/katy-tx" className="hover:text-primary transition-colors">Katy, TX</a></li>
-              <li><a href="/locations/sugar-land-tx" className="hover:text-primary transition-colors">Sugar Land, TX</a></li>
-              <li><a href="/locations/pearland-tx" className="hover:text-primary transition-colors">Pearland, TX</a></li>
-              <li><a href="/locations/the-woodlands-tx" className="hover:text-primary transition-colors">The Woodlands, TX</a></li>
+              <li><a href="/services/dematting-undercoat" className="hover:text-primary transition-colors">Dematting & Undercoat</a></li>
+              <li><a href="/services/hand-scissoring" className="hover:text-primary transition-colors">Hand Scissoring</a></li>
+              <li><a href="/services/full-grooming" className="hover:text-primary transition-colors">Full Grooming</a></li>
+              <li><a href="/services/bird-grooming" className="hover:text-primary transition-colors">Bird Grooming</a></li>
+              <li><a href="/services/nail-trim-ear-cleaning" className="hover:text-primary transition-colors">Nail Trim & Ear Cleaning</a></li>
+              <li><a href="/services/multi-pet-grooming" className="hover:text-primary transition-colors">Multi-Pet Grooming</a></li>
             </ul>
           </div>
+
+          {/* Service Areas */}
+          <div className="space-y-6">
+            <h4 className="text-white font-black uppercase tracking-wider">Service Areas</h4>
+            <ul className="space-y-3">
+              <li><a href="/service-areas/palatka-fl" className="hover:text-primary transition-colors">Palatka, FL</a></li>
+              <li><a href="/service-areas/gainesville-fl" className="hover:text-primary transition-colors">Gainesville, FL</a></li>
+              <li><a href="/service-areas/daytona-beach-fl" className="hover:text-primary transition-colors">Daytona Beach, FL</a></li>
+              <li><a href="/service-areas/jacksonville-fl" className="hover:text-primary transition-colors">Jacksonville, FL</a></li>
+            </ul>
+          </div>
+
           {/* Operating Hours */}
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Operating Hours</h4>
             <ul className="space-y-3 font-mono text-sm">
-              <li className="flex justify-between"><span>Mon - Fri:</span> <span>7:30am - 5:00pm</span></li>
-              <li className="flex justify-between"><span>Saturday:</span> <span>Overtime Available</span></li>
-              <li className="flex justify-between text-primary font-bold"><span>Sunday:</span> <span>Overtime Available</span></li>
+              <li className="flex justify-between text-primary font-bold"><span>Open:</span> <span>24/7</span></li>
             </ul>
           </div>
 
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Tri Refrigeration & HVAC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Acme Grooming Co Mobile. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="/terms" className="hover:text-white transition-colors">Terms & Conditions</a>
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
           </div>
         </div>
       </div>

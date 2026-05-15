@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MapPin, Users, Clock, ShieldCheck, Heart, Home, ShoppingBag } from "lucide-react";
+import { Facebook, Instagram, MapPin, Users, Clock, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const GoogleIcon = ({ className }: { className?: string }) => (
@@ -14,11 +14,11 @@ export const About = () => {
         {/* Top Stats */}
         <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-6 mb-12 border-b border-border/40 pb-12">
           {[
-            { text: "100% Guaranteed", icon: ShieldCheck },
-            { text: "Commercial & Residential", icon: Home },
-            { text: "Fully Insured", icon: ShieldCheck },
-            { text: "Based in Houston TX", icon: MapPin },
-            { text: "Overtime Available", icon: Clock }
+            { text: "50 Years Experience", icon: Clock },
+            { text: "All Pets Welcome", icon: Users },
+            { text: "5 Star Rated", icon: ShieldCheck },
+            { text: "Serving Satsuma, FL", icon: MapPin },
+            { text: "Family Owned", icon: Users }
           ].map((stat, i) => (
             <motion.div 
               key={i}
@@ -40,27 +40,27 @@ export const About = () => {
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">About Us</h2>
             <div className="w-24 h-1 bg-primary"></div>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Tri Refrigeration & HVAC is a trusted provider of commercial and residential HVAC and refrigeration services in Houston, TX and the surrounding metro areas. We specialize in walk-in coolers, freezers, commercial ovens, and air conditioning for supermarkets, restaurants, businesses, and homes. Fully insured and dedicated to keeping your operations running smoothly.
+              With 50 years of experience, Acme Grooming Co Mobile is your trusted partner for all pet grooming needs. Owned by Joan, we welcome all pets and provide top-notch, 5-star rated services within 50-60 miles of Satsuma, FL.
             </p>
             <div className="flex gap-4 pt-4">
-              <a href="https://www.facebook.com/Tripointrefrigeration/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+              <a href="#" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/TriHVACHouston" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+              <a href="#" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://g.page/r/CZoh3-NW4MDcEAE/review" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+              <a href="#" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                 <GoogleIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
           
           <div className="relative">
-            <div className="overflow-hidden rounded-lg">
+            <div className="aspect-square md:aspect-video lg:aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://vibe.filesafe.space/1778436264577951505/attachments/11e141a0-5e2d-46f4-a8e0-15fddf4d91db.png" 
-                alt="Tri Refrigeration & HVAC Team" 
-                className="w-full h-auto object-cover"
+                src="https://vibe.filesafe.space/1777144393499000111/attachments/f32313b8-afd0-4c42-90bd-8b7460f1da5e.png" 
+                alt="About us" 
+                className="w-full h-full object-cover"
               />
             </div>
             {/* Decorative element */}

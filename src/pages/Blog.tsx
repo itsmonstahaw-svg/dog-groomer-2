@@ -5,43 +5,44 @@ import { ServiceAreas } from "@/components/ServiceAreas";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 import { FloatingQuoteButton } from "@/components/FloatingQuoteButton";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
-    title: "WHY HOUSTON RESTAURANTS NEED A DEDICATED COMMERCIAL REFRIGERATION SPECIALIST",
+    title: "THE COMPLETE GUIDE TO PROFESSIONAL DOG GROOMING IN SATSUMA, FL",
     description:
-      "Cover the risks of equipment downtime, food spoilage costs, health code violations, and why a commercial-only specialist like Tri Refrigeration & HVAC is the right call for Houston restaurant owners.",
-    href: "/blog/why-houston-restaurants-need-specialist",
+      "Looking for expert dog grooming in Satsuma and surrounding areas? Discover how Acme Grooming Co Mobile keeps your furry friend clean, healthy, and looking their absolute best.",
+    href: "/blog/complete-guide-to-professional-dog-grooming-in-satsuma-fl",
   },
   {
-    title: "WALK-IN COOLER NOT HOLDING TEMPERATURE? HERE'S WHAT TO DO",
+    title: "YOUR GO-TO TEAM FOR MOBILE PET GROOMING IN FLORIDA",
     description:
-      "Cover common causes, what business owners should check first, when to call a technician, and how Tri Refrigeration & HVAC serves Houston and surrounding areas.",
-    href: "/blog/walk-in-cooler-not-holding-temperature",
+      "Need safe, loving, and convenient care for your dog? Learn how Acme Grooming Co Mobile provides stress-free mobile grooming right at your doorstep.",
+    href: "/blog/your-go-to-team-for-mobile-pet-grooming-in-florida",
   },
   {
-    title: "COMMERCIAL HVAC MAINTENANCE: WHY HOUSTON BUSINESSES CAN'T AFFORD TO SKIP IT",
+    title: "WHY REGULAR GROOMING IS ESSENTIAL FOR YOUR DOG'S HEALTH",
     description:
-      "Cover the Houston heat, the cost of unexpected failures, preventative maintenance benefits, and how Tri Refrigeration & HVAC helps commercial properties stay running.",
-    href: "/blog/commercial-hvac-maintenance-houston",
+      "Regular grooming is about more than looks. Discover how consistent grooming sessions at Acme Grooming Co Mobile support your dog's skin, coat, and overall wellbeing.",
+    href: "/blog/why-regular-grooming-is-essential-for-your-dogs-health",
   },
   {
-    title: "THE TRUE COST OF A BROKEN WALK-IN FREEZER FOR FOOD SERVICE BUSINESSES",
+    title: "FROM CHAOS TO CALM: MOBILE GROOMING THAT ACTUALLY WORKS",
     description:
-      "Cover lost stock, health inspections, emergency repair costs, and how fast response from Tri Refrigeration & HVAC protects Houston businesses.",
-    href: "/blog/true-cost-broken-walk-in-freezer",
+      "Struggling with a nervous or anxious pet? Explore how Acme Grooming Co Mobile's gentle and patient approach transforms grooming across Florida.",
+    href: "/blog/from-chaos-to-calm-mobile-grooming-that-actually-works",
   },
   {
-    title: "HVAC & REFRIGERATION IN KATY, SUGAR LAND & THE WOODLANDS: WHAT COMMERCIAL BUSINESSES NEED TO KNOW",
+    title: "MOBILE GROOMING VS. SALONS: WHICH IS BETTER FOR YOUR DOG?",
     description:
-      "Cover the growth of commercial food service in the Houston suburbs, equipment demands, and how Tri Refrigeration & HVAC serves the wider Houston metro area.",
-    href: "/blog/hvac-refrigeration-katy-sugar-land-woodlands",
+      "Not all grooming experiences are equal. Trust Acme Grooming Co Mobile to provide warm, one-on-one attention so your dog never has to wait in a stressful cage.",
+    href: "/blog/mobile-grooming-vs-salons-which-is-better-for-your-dog",
   },
   {
-    title: "HOW TO CHOOSE THE RIGHT COMMERCIAL HVAC & REFRIGERATION TECHNICIAN IN HOUSTON TX",
+    title: "PREPARING YOUR PET FOR THEIR FIRST MOBILE GROOM",
     description:
-      "Cover what to look for: commercial-only experience, insurance, response time, overtime availability, and why Tri Refrigeration & HVAC ticks every box.",
-    href: "/blog/choose-right-commercial-hvac-technician-houston",
+      "Grooming doesn't have to be a nightmare. Discover proven techniques from the Acme Grooming Co Mobile team to help your dog learn fast and enjoy a stress-free experience.",
+    href: "/blog/preparing-your-pet-for-their-first-mobile-groom",
   },
 ];
 
@@ -56,7 +57,7 @@ const Blog = () => {
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              'url("https://vibe.filesafe.space/1778436264577951505/attachments/bae4b4f5-17dc-4e41-a45e-97b195687224.png")',
+              'url("https://vibe.filesafe.space/1777144393499000111/attachments/2c9060be-13eb-4282-8f3c-7811c0f61fd5.png")',
           }}
         >
           <div className="absolute inset-0 bg-black/60" />
@@ -73,7 +74,7 @@ const Blog = () => {
           >
             <path
               d="M0 120 L0 60 C 150 -20 250 140 450 70 C 650 0 750 120 900 80 C 1050 40 1150 20 1200 50 L 1200 120 Z"
-              className="fill-white"
+              className="fill-background"
             />
           </svg>
         </div>
@@ -122,12 +123,12 @@ const Blog = () => {
                 <p className="text-sm text-gray-600 leading-relaxed mb-5">
                   {post.description}
                 </p>
-                <a
-                  href={post.href}
+                <Link
+                  to={post.href}
                   className="text-sm font-black uppercase tracking-wider text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
                 >
                   READ FULL POST →
-                </a>
+                </Link>
               </article>
             ))}
           </div>
@@ -135,7 +136,7 @@ const Blog = () => {
       </section>
 
       <main>
-        <Reviews topWaveColor="white" />
+        <Reviews />
         <Process />
         <ServiceAreas />
         <CTA />
