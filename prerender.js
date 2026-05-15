@@ -4,126 +4,142 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const BASE_URL = 'https://trirefrigerationhvac.com'
+const BASE_URL = 'https://dog-groomer-2.netlify.app'
 
 const routesMeta = {
   '/': {
-    title: 'Tri Refrigeration & HVAC | Houston, TX',
-    description: 'Expert commercial & residential HVAC, refrigeration, walk-in coolers, and restaurant equipment repair in Houston, TX. Fully insured. Call (713) 909-7745.',
+    title: 'Acme Grooming Co Mobile | Mobile Pet Grooming Satsuma, FL',
+    description: 'Florida\'s most experienced mobile pet groomer. We come to you! Professional grooming for dogs, cats, birds & more in Satsuma, FL and surrounding areas. Call (386) 388-3540.',
   },
   '/home': {
-    title: 'Tri Refrigeration & HVAC | Houston, TX',
-    description: 'Expert commercial & residential HVAC, refrigeration, walk-in coolers, and restaurant equipment repair in Houston, TX. Fully insured. Call (713) 909-7745.',
+    title: 'Acme Grooming Co Mobile | Mobile Pet Grooming Satsuma, FL',
+    description: 'Florida\'s most experienced mobile pet groomer. We come to you! Professional grooming for dogs, cats, birds & more in Satsuma, FL and surrounding areas. Call (386) 388-3540.',
   },
-  '/services/commercial-refrigeration': {
-    title: 'Commercial Refrigeration Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Expert commercial refrigeration repair, maintenance & installation for Houston TX restaurants and supermarkets. Walk-in coolers, freezers & display cases. Call (713) 909-7745.',
+  '/services/dematting-undercoat': {
+    title: 'Dematting & Undercoat Treatment | Acme Grooming Co Mobile FL',
+    description: 'Professional dematting and undercoat removal for dogs and cats across Florida. Gentle, stress-free mobile grooming at your door. Call (386) 388-3540.',
   },
-  '/services/hvac-air-conditioning': {
-    title: 'HVAC & Air Conditioning Houston TX | Tri Refrigeration & HVAC',
-    description: 'Commercial & residential HVAC installation, repair & maintenance in Houston TX. Rooftop units, split systems & more. Fully insured. Call (713) 909-7745.',
+  '/services/hand-scissoring': {
+    title: 'Hand Scissoring & Show Cuts | Acme Grooming Co Mobile FL',
+    description: 'Precision hand scissoring and breed-standard show cuts by expert mobile groomers in Florida. Book your appointment today. Call (386) 388-3540.',
   },
-  '/services/ice-machine-ems': {
-    title: 'Ice Machine Repair & EMS Systems Houston TX | Tri Refrigeration & HVAC',
-    description: 'Commercial ice machine repair, installation & sanitation in Houston TX. Fast response, fully insured. Call (713) 909-7745.',
+  '/services/full-grooming': {
+    title: 'Full Grooming Package | Acme Grooming Co Mobile FL',
+    description: 'Complete mobile pet grooming package including bath, blowout, haircut, nail trim & ear cleaning. Serving Florida pet owners. Call (386) 388-3540.',
   },
-  '/services/residential-refrigeration': {
-    title: 'Residential Refrigeration Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Professional home refrigerator & freezer repair in Houston TX. Fast, reliable, fully insured. Call (713) 909-7745.',
+  '/services/bird-grooming': {
+    title: 'Bird Grooming | Acme Grooming Co Mobile FL',
+    description: 'Specialized mobile bird grooming — beak, nail & wing trimming for all avian species across Florida. Expert care at your door. Call (386) 388-3540.',
   },
-  '/services/restaurant-equipment': {
-    title: 'Restaurant Equipment Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Commercial restaurant equipment repair & maintenance in Houston TX. Ovens, fryers, coolers & more. Minimise downtime. Call (713) 909-7745.',
+  '/services/nail-trim-ear-cleaning': {
+    title: 'Nail Trim & Ear Cleaning | Acme Grooming Co Mobile FL',
+    description: 'Mobile pet nail trimming and ear cleaning services across Florida. Quick, professional, stress-free maintenance at your home. Call (386) 388-3540.',
   },
-  '/services/walk-in-coolers': {
-    title: 'Walk-In Cooler & Freezer Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Walk-in cooler & freezer repair, installation & maintenance in Houston TX. Overtime available. Fully insured. Call (713) 909-7745.',
-  },
-  '/locations/houston-tx': {
-    title: 'HVAC & Refrigeration Houston TX | Tri Refrigeration & HVAC',
-    description: 'Houston TX HVAC and refrigeration services for restaurants, supermarkets & businesses. Serving Downtown, River Oaks, Galleria & surrounding areas. Call (713) 909-7745.',
-  },
-  '/locations/katy-tx': {
-    title: 'HVAC & Refrigeration Katy TX | Tri Refrigeration & HVAC',
-    description: 'Katy TX HVAC and refrigeration repair & installation. Serving Cinco Ranch, Cross Creek Ranch, Kelliwood & beyond. Call (713) 909-7745.',
-  },
-  '/locations/pearland-tx': {
-    title: 'HVAC & Refrigeration Pearland TX | Tri Refrigeration & HVAC',
-    description: 'Pearland TX HVAC and refrigeration services for commercial and residential clients. Fast, reliable, fully insured. Call (713) 909-7745.',
-  },
-  '/locations/sugar-land-tx': {
-    title: 'HVAC & Refrigeration Sugar Land TX | Tri Refrigeration & HVAC',
-    description: 'Sugar Land TX HVAC and refrigeration repair & maintenance. Experienced, fully insured technicians. Call (713) 909-7745.',
-  },
-  '/locations/the-woodlands-tx': {
-    title: 'HVAC & Refrigeration The Woodlands TX | Tri Refrigeration & HVAC',
-    description: 'The Woodlands TX HVAC and refrigeration services. Commercial and residential. Overtime available. Call (713) 909-7745.',
+  '/services/multi-pet-grooming': {
+    title: 'Multi-Pet Grooming | Acme Grooming Co Mobile FL',
+    description: 'Mobile grooming for dogs, cats, birds, rabbits & horses — all in one visit. Serving multi-pet households across Florida. Call (386) 388-3540.',
   },
   '/gallery': {
-    title: 'Gallery | Tri Refrigeration & HVAC Houston TX',
-    description: 'See our work — commercial refrigeration installs, HVAC systems, walk-in coolers & restaurant equipment across Houston TX.',
+    title: 'Gallery | Acme Grooming Co Mobile FL',
+    description: 'See our work — before and after photos of mobile pet grooming across Florida. 5-star rated service. Call (386) 388-3540.',
   },
   '/blog': {
-    title: 'Blog | Tri Refrigeration & HVAC Houston TX',
-    description: 'HVAC and refrigeration tips, maintenance guides & industry news from Tri Refrigeration & HVAC in Houston TX.',
+    title: 'Blog | Acme Grooming Co Mobile FL',
+    description: 'Pet grooming tips, guides & mobile grooming news from Acme Grooming Co Mobile in Satsuma, FL.',
   },
-  '/blog/why-houston-restaurants-need-specialist': {
-    title: 'Why Houston Restaurants Need A Refrigeration Specialist | Tri Refrigeration & HVAC',
-    description: 'Discover why Houston restaurants and food service businesses need a dedicated commercial refrigeration specialist to protect their operations and bottom line.',
+  '/blog/complete-guide-to-professional-dog-grooming-in-satsuma-fl': {
+    title: 'Complete Guide To Professional Dog Grooming In Satsuma FL | Acme Grooming Co Mobile',
+    description: 'Everything Satsuma, FL pet owners need to know about professional mobile dog grooming — services, benefits & what to expect from Acme Grooming Co Mobile.',
   },
-  '/blog/walk-in-cooler-not-holding-temperature': {
-    title: 'Walk-In Cooler Not Holding Temperature? Here\'s What To Do | Tri Refrigeration & HVAC',
-    description: 'Step-by-step guide for Houston food service businesses when a walk-in cooler stops holding temperature. When to call a professional.',
+  '/blog/your-go-to-team-for-mobile-pet-grooming-in-florida': {
+    title: 'Your Go-To Team For Mobile Pet Grooming In Florida | Acme Grooming Co Mobile',
+    description: 'Discover why Acme Grooming Co Mobile is Florida\'s top choice for mobile pet grooming — convenience, expert care & stress-free sessions at your door.',
   },
-  '/blog/commercial-hvac-maintenance-houston': {
-    title: 'Commercial HVAC Maintenance: Why Houston Businesses Can\'t Skip It | Tri Refrigeration & HVAC',
-    description: 'Why regular HVAC maintenance is essential for Houston businesses and homeowners. Cost savings, efficiency, and avoiding emergency breakdowns.',
+  '/blog/why-regular-grooming-is-essential-for-your-dogs-health': {
+    title: 'Why Regular Grooming Is Essential For Your Dog\'s Health | Acme Grooming Co Mobile',
+    description: 'Learn how regular professional grooming benefits your dog\'s skin, coat, nails & overall health. Expert advice from Acme Grooming Co Mobile in Florida.',
   },
-  '/blog/true-cost-broken-walk-in-freezer': {
-    title: 'The True Cost Of A Broken Walk-In Freezer | Tri Refrigeration & HVAC',
-    description: 'What a walk-in freezer breakdown really costs Houston food service operations — spoilage, downtime, lost revenue, and how to prevent it.',
+  '/blog/from-chaos-to-calm-mobile-grooming-that-actually-works': {
+    title: 'From Chaos To Calm: Mobile Grooming That Actually Works | Acme Grooming Co Mobile',
+    description: 'How mobile grooming transforms a stressful experience into a calm, positive spa day for anxious pets across Florida.',
   },
-  '/blog/hvac-refrigeration-katy-sugar-land-woodlands': {
-    title: 'HVAC & Refrigeration In Katy, Sugar Land & The Woodlands | Tri Refrigeration & HVAC',
-    description: 'What businesses and homeowners in Katy, Sugar Land & The Woodlands need to know about commercial HVAC and refrigeration services.',
+  '/blog/mobile-grooming-vs-salons-which-is-better-for-your-dog': {
+    title: 'Mobile Grooming vs. Salons: Which Is Better For Your Dog? | Acme Grooming Co Mobile',
+    description: 'Comparing mobile grooming and traditional salons — learn why Florida pet owners choose Acme Grooming Co Mobile for a safer, lower-stress experience.',
   },
-  '/blog/choose-right-commercial-hvac-technician-houston': {
-    title: 'How To Choose The Right HVAC Technician In Houston TX | Tri Refrigeration & HVAC',
-    description: 'Key factors to consider when choosing a commercial HVAC and refrigeration technician in Houston TX. Licensing, experience, and response times.',
+  '/blog/preparing-your-pet-for-their-first-mobile-groom': {
+    title: 'Preparing Your Pet For Their First Mobile Groom | Acme Grooming Co Mobile',
+    description: 'Tips for Florida pet owners to help their dog or cat have a smooth, stress-free first mobile grooming appointment with Acme Grooming Co Mobile.',
+  },
+  '/service-areas/palatka-fl': {
+    title: 'Mobile Pet Grooming Palatka FL | Acme Grooming Co Mobile',
+    description: 'Professional mobile pet grooming in Palatka, FL. We come to your door — no stress, no salon. 5-star rated service. Call (386) 388-3540.',
+  },
+  '/service-areas/gainesville-fl': {
+    title: 'Mobile Pet Grooming Gainesville FL | Acme Grooming Co Mobile',
+    description: 'Expert mobile pet grooming in Gainesville, FL. Full-service salon comes to you. Dogs, cats, birds & more. Call (386) 388-3540.',
+  },
+  '/service-areas/daytona-beach-fl': {
+    title: 'Mobile Pet Grooming Daytona Beach FL | Acme Grooming Co Mobile',
+    description: 'Professional mobile pet grooming in Daytona Beach, FL. Stress-free, one-on-one grooming at your home. Call (386) 388-3540.',
+  },
+  '/service-areas/jacksonville-fl': {
+    title: 'Mobile Pet Grooming Jacksonville FL | Acme Grooming Co Mobile',
+    description: 'Top-rated mobile pet grooming in Jacksonville, FL. Full service salon van comes to your door. Call (386) 388-3540.',
+  },
+  '/service-areas/crescent-city-fl': {
+    title: 'Mobile Pet Grooming Crescent City FL | Acme Grooming Co Mobile',
+    description: 'Professional mobile pet grooming in Crescent City, FL. Convenient, stress-free grooming at your home in Putnam County. Call (386) 388-3540.',
+  },
+  '/service-areas/st-augustine-fl': {
+    title: 'Mobile Pet Grooming St. Augustine FL | Acme Grooming Co Mobile',
+    description: 'Expert mobile pet grooming in St. Augustine, FL. We come to your home — no busy salon, no stress. Call (386) 388-3540.',
+  },
+  '/service-areas/ocala-fl': {
+    title: 'Mobile Pet Grooming Ocala FL | Acme Grooming Co Mobile',
+    description: 'Professional mobile pet grooming in Ocala, FL. Full grooming services for dogs, cats, birds & more at your property. Call (386) 388-3540.',
+  },
+  '/service-areas/interlachen-fl': {
+    title: 'Mobile Pet Grooming Interlachen FL | Acme Grooming Co Mobile',
+    description: 'Mobile pet grooming serving Interlachen, FL. We bring city-quality grooming to your rural or lakeside home. Call (386) 388-3540.',
+  },
+  '/service-areas/orange-park-fl': {
+    title: 'Mobile Pet Grooming Orange Park FL | Acme Grooming Co Mobile',
+    description: 'Professional mobile pet grooming in Orange Park, FL. Convenient, one-on-one grooming at your door in Clay County. Call (386) 388-3540.',
   },
   '/contact': {
-    title: 'Contact Us | Tri Refrigeration & HVAC Houston TX',
-    description: 'Contact Tri Refrigeration & HVAC in Houston TX. Call (713) 909-7745 or send a message for fast, professional HVAC and refrigeration service.',
+    title: 'Contact Us | Acme Grooming Co Mobile FL',
+    description: 'Contact Acme Grooming Co Mobile in Satsuma, FL. Call (386) 388-3540 or send a message to book your mobile pet grooming appointment.',
   },
   '/review': {
-    title: 'Leave A Review | Tri Refrigeration & HVAC',
-    description: 'Enjoyed our service? Leave a review for Tri Refrigeration & HVAC and help other Houston businesses find reliable HVAC and refrigeration repair.',
+    title: 'Leave A Review | Acme Grooming Co Mobile FL',
+    description: 'Enjoyed your mobile grooming experience? Leave a review for Acme Grooming Co Mobile and help other Florida pet owners find us.',
   },
-  '/discount': {
-    title: '10% Discount Offer | Tri Refrigeration & HVAC Houston TX',
-    description: 'Claim your 10% discount on HVAC and refrigeration services in Houston TX. Contact Tri Refrigeration & HVAC today.',
+  '/get-your-discount': {
+    title: 'Get Your Discount | Acme Grooming Co Mobile FL',
+    description: 'Claim your special discount on mobile pet grooming services from Acme Grooming Co Mobile in Florida. Limited time offer.',
   },
   '/client-submit': {
-    title: 'Client Submission | Tri Refrigeration & HVAC',
-    description: 'Submit your service request to Tri Refrigeration & HVAC in Houston TX.',
+    title: 'Client Submission | Acme Grooming Co Mobile FL',
+    description: 'Submit your service request to Acme Grooming Co Mobile in Satsuma, FL.',
   },
   '/thank-you': {
-    title: 'Thank You | Tri Refrigeration & HVAC',
-    description: 'Thank you for contacting Tri Refrigeration & HVAC. We\'ll be in touch shortly.',
+    title: 'Thank You | Acme Grooming Co Mobile FL',
+    description: 'Thank you for contacting Acme Grooming Co Mobile. We\'ll be in touch shortly to confirm your appointment.',
   },
   '/privacy-policy': {
-    title: 'Privacy Policy | Tri Refrigeration & HVAC',
-    description: 'Privacy policy for Tri Refrigeration & HVAC in Houston TX.',
+    title: 'Privacy Policy | Acme Grooming Co Mobile FL',
+    description: 'Privacy policy for Acme Grooming Co Mobile in Satsuma, FL.',
   },
   '/terms': {
-    title: 'Terms & Conditions | Tri Refrigeration & HVAC',
-    description: 'Terms and conditions for Tri Refrigeration & HVAC in Houston TX.',
+    title: 'Terms & Conditions | Acme Grooming Co Mobile FL',
+    description: 'Terms and conditions for Acme Grooming Co Mobile in Satsuma, FL.',
   },
 }
 
 const DEFAULT_META = {
-  title: 'Tri Refrigeration & HVAC | Houston, TX',
-  description: 'Expert commercial & residential HVAC, refrigeration, walk-in coolers, and restaurant equipment repair in Houston, TX. Call (713) 909-7745.',
+  title: 'Acme Grooming Co Mobile | Mobile Pet Grooming FL',
+  description: 'Florida\'s most experienced mobile pet groomer. Professional grooming at your door. Call (386) 388-3540.',
 }
 
 const routes = Object.keys(routesMeta)
