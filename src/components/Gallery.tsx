@@ -6,7 +6,7 @@ export const Gallery = () => {
     "https://vibe.filesafe.space/1777144393499000111/attachments/58ba642a-4ee9-4082-ad9b-a9b21c821316.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/a5d8c2c5-8753-4015-9740-75d9995c8c52.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/008dbbef-cd63-47ec-b9cb-de9eefe38af2.png",
-    "https://vibe.filesafe.space/1777144393499000111/attachments/8a4d744b-9eb5-4891-8caa-9c0a004aa6de.png",
+    "https://vibe.filesafe.space/1777144393499000111/attachments/7b1db069-4297-4ed9-b54c-6eb193eae158.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/c9fbefd8-a5a4-4b91-8f0a-3303d94b1ac2.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/243b2e7a-8c8c-46c7-a56a-b4c6f52790f2.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/16f90138-95dd-4bb7-9aef-c7a2026ac484.png",
