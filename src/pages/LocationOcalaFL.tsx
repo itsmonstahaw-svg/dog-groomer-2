@@ -38,7 +38,7 @@ const ServiceAreaOcala = () => {
               Your Dependable Ocala, FL Pet Care Specialist
             </h1>
             <p className="text-base md:text-lg font-medium max-w-3xl mx-auto text-gray-300 [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)]">
-              Serving Ocala, FL and surrounding areas
+              Silver Springs Shores · On Top of the World · Marion Oaks · Belleview · 34471 · 34476
             </p>
 
             <div className="pt-6 flex flex-col sm:flex-row gap-4 items-center justify-center">

@@ -38,7 +38,7 @@ const ServiceAreaCrescentCity = () => {
               Your Dependable Crescent City, FL Pet Care Specialist
             </h1>
             <p className="text-base md:text-lg font-medium max-w-3xl mx-auto text-gray-300 [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)]">
-              Serving Crescent City, FL and surrounding areas
+              Fruitland · Georgetown · Pomona Park · Welaka · Lake Como · 32112
             </p>
 
             <div className="pt-6 flex flex-col sm:flex-row gap-4 items-center justify-center">

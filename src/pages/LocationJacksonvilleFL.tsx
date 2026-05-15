@@ -38,7 +38,7 @@ const ServiceAreaJacksonville = () => {
               Your Dependable Jacksonville, FL Pet Care Specialist
             </h1>
             <p className="text-base md:text-lg font-medium max-w-3xl mx-auto text-gray-300 [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)]">
-              Serving Jacksonville, FL and surrounding areas
+              Riverside · Avondale · San Marco · Mandarin · Southside · Fleming Island
             </p>
 
             <div className="pt-6 flex flex-col sm:flex-row gap-4 items-center justify-center">
