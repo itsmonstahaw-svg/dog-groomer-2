@@ -145,7 +145,7 @@ const DEFAULT_META = {
 const routes = Object.keys(routesMeta)
 
 async function prerender() {
-  const templatePath = path.resolve(__dirname, 'dist/index.html')
+  const templatePath = path.resolve(__dirname, 'dist/client/index.html')
   const template = fs.readFileSync(templatePath, 'utf-8')
 
   const { render } = await import('./dist/server/entry-server.js')
@@ -162,7 +162,7 @@ async function prerender() {
       .replace(/<!--page-canonical-->/g, canonical)
 
     const routePath = route === '/' ? '/index.html' : `${route}/index.html`
-    const filePath = path.resolve(__dirname, `dist${routePath}`)
+    const filePath = path.resolve(__dirname, `dist/client${routePath}`)
 
     fs.mkdirSync(path.dirname(filePath), { recursive: true })
     fs.writeFileSync(filePath, html)
