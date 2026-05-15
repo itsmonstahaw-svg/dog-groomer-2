@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  command = "vite build && vite build --ssr src/entry-server.tsx --outDir dist/server && node prerender.js"
+  publish = "dist/client"
 
 [[redirects]]
   from = "/*"
