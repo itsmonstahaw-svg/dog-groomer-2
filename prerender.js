@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const BASE_URL = 'https://dog-groomer-2.netlify.app'
+const BASE_URL = 'https://acme-grooming.netlify.app'
 
 const routesMeta = {
   '/': {
