@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 export const Gallery = () => {
   const images = [
+    "/ME27ea8da13a707523a3076e917dc7d126.jpeg",
     "https://vibe.filesafe.space/1777144393499000111/attachments/58ba642a-4ee9-4082-ad9b-a9b21c821316.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/a5d8c2c5-8753-4015-9740-75d9995c8c52.png",
     "https://vibe.filesafe.space/1777144393499000111/attachments/008dbbef-cd63-47ec-b9cb-de9eefe38af2.png",
@@ -29,17 +30,34 @@ export const Gallery = () => {
         </div>
 
         <div className="columns-2 md:columns-4 gap-4 space-y-4">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+            className="break-inside-avoid relative overflow-hidden rounded-lg group mb-4"
+          >
+            <video
+              src="/ME3235e94c29c0904a3b8544e576b31ddf.mpg4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </motion.div>
           {images.map((img, i) => (
-            <motion.div 
-              key={i} 
+            <motion.div
+              key={i}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: i * 0.05 }}
               className="break-inside-avoid relative overflow-hidden rounded-lg group mb-4"
             >
-              <img 
-                src={img} 
+              <img
+                src={img}
                 alt={`Gallery image ${i + 1}`}
                 className="w-full h-auto object-cover bg-muted/10 transition-transform duration-500 group-hover:scale-110"
               />
